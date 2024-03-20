@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 900;
+}
+.main-container {
+    max-width: 100%;
+}
+.card-container {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.cardFront {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+.cardFront.active {
+    top: -100%;
+}
+.card-Front {
+    max-width: 500px;
+    object-fit: cover;
+}
+.cardFront .card-Front img {
+    width: 100%;
+}
+.cardFront .-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.cardFront .holderNumber {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+}
+.cardFront .cardHolder {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+.cardFront .cardExpiry {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    display: flex;
+}
+.cardBack .card-back {
+    max-width: 500px;
+    object-fit: cover;
+}
+.cardBack .card-back img {
+    width: 100%;
+}
+.cardCvv {
+    position: absolute;
+    bottom: -100%;
+    right: 20px;
+    transition: .5s ease-in;
+}
+.cardCvv.active {
+    top: 40px;
+}
+.card-type-img {
+display: none;
+}
+.card-type-img.active {
+display: block;
+}
+.form {
+    width: 100%;
+}
+form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form form  .numbers{
+     display: flex;
+     max-width: 50%;
+     gap: 10px;
+}
+.numbers input {
+    max-width: 80px;
+    height: 40px;
+    border: 2px solid rgb(71, 71, 71);
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+}
+.cardHolderInput {
+    width: 100%;
+}
+.cardHolderInput input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgb(71, 71, 71);
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+}
+.expiry-cvv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.expiry-cvv .expiry-input select {
+    max-width: 50px;
+    height: 40px;
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: 10px;
+ }
+ .expiry-cvv .cvv {
+    max-width: 50%;
+ }
+ .cvv input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgb(71, 71, 71);
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+ }
+ .info {
+    width: 100%;
+    background-color: red;
+ }
+.submit {
+    width: 100%;
+    height: 40px;
+}
+.submit input {
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: none;
+    background-color: blue;
+}

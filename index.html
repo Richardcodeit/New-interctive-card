@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive</title>
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="info">
+            <p>So this is how it works let the first number digit = 2 the card type image for master card will appear , if 5 verve card if 4 visa card</p>
+        </div>
+        <section class="main-container">
+            <div class="card-container">
+                <div class="cardFront">
+                    <div class="card-Front">
+                        <img src="images/bg-card-front.png" alt="" class="cardFront-img">
+                    </div>
+                    <div class="-img">
+                        <img src="images/Verve.PNG" alt="" width="30px" class="Verve card-type-img " data-cardType= 5>
+                        <img src="images/Master.PNG" alt="" width="30px" class="Master card-type-img" data-cardType=2>
+                        <img src="images/Visa.PNG" alt="" width="30px" class="Visa card-type-img" data-cardType=4> 
+                    </div>
+                    <div class="holderNumber">
+                        <p class="firstFour para-number"> </p> 
+                        <p class="secondFour para-number"> </p>
+                        <p class="thirdFour para-number"> </p>
+                        <p class="fourthFour para-number">  </p>
+                    </div>
+                    <div class="cardHolder">
+                        <p class="holder">
+                            Card holder:
+                        </p>
+                        <p class="holderName">
+                            
+                      </p>
+                    </div>
+                    <div class="cardExpiry">
+                        <p class="month"></p>
+                        <p class="year"></p>
+                    </div>
+                </div>
+                <div class="cardBack">
+                    <div class="card-back">
+                        <img src="images/bg-card-back.png" alt="" class="cardBack-img">
+                    </div>
+                    <div class="cardCvv">
+                        <p class="cvv">
+                            222
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <section class="form">
+            <p class="error-message" style="color: red;">
+                
+            </p>
+            <form action="">
+                <label style="color: black;"> Card number</label>
+                <div class="numbers">
+                    <input type="text" name="firstFour" id="firstFour-input" class="inputNumber">
+                    <input type="text" name="secondFour" id="secondFour-input" class="inputNumber">
+                    <input type="text" name="thirdFour" id="thirdFour-input" class="inputNumber">
+                    <input type="text" name="fourthFour" id="fourthFour-input" class="inputNumber">
+                </div>
+                <label style="color: black;"> Card name</label>
+                <div class="cardHolderInput">
+                    <input type="text" name="cardHolder" id="cardHolder-input">
+                </div>
+                <label style="color: black;"> Expiry</label>
+                <div class="expiry-cvv">
+                    <div class="expiry-input">
+                        <select name="expiry-month-input" id="expiry-month-input">
+                            <option value="nothing.." disabled selected>00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="expiry-year-input" id="expiry-year-input">
+                            <option value="nothing.." disabled selected>2000</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                        </select>
+                     </div>
+                     <div class="cvv">
+                         <input type="number" name="cvv" id="cvv" placeholder="CVV e,g 123">
+                        </div>
+                 </div>
+                 <div class="submit">
+                    <input type="submit" value="Submit">
+                 </div>
+                </form>
+        </section>
+        <script src="script.js"></script>
+</body>
+</html>
